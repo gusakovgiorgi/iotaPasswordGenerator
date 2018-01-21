@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+
+
+body{
+	color:white;
+	text-align:center;
+	font-family:'Roboto';
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	-webkit-transform: translate3d(0,0,0);
+	font-weight:300;
+	font-size:32px;
+	background: url("../img/space-bg.jpg");
+	padding-top:10vh;
+	margin: 0;
+	height:100%;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+}
+header div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+
+#logo{
+	padding-top: 5vh;
+	width:100px;
+	height:100px;
+}
+
+#bubble{
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100px;
+	height: 100px;
+}
+
+#progressbar-main-container{
+	visibility: hidden;
+}
+
+.progressbar:after, .progressbar:before{
+	content:"";
+	display:block;
+	clear:both;
+}
+.progressbar{
+	padding:0.01em 16px;
+	background-color:#767227;
+	height:24px;
+}
+
+.progressbar-container{
+	background-color:#AB8F61;
+	width: 50%;
+	margin: auto;
+
+}
+
+button {
+    background-color: #AB8F61;
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 15vh auto 5vh;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 12px;
+     -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #767227;
+    color: white;
+}
+
+.modalDialog {
+	position: fixed;
+	color:black;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+.modalDialog > div {
+	width: 80%;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+#generated-password-container{
+	margin: auto;
+	
+}
+
+#generated-password-container img{
+
+	width: 48px;
+	height: 48px;
+	vertical-align: middle;
+	padding-left: 20px;
+
+}
+#generated-password-container input[type=text]{
+    text-align: center;
+    height: 48px;
+    padding: 8px 10px;
+    display: inline-block;
+}
+
