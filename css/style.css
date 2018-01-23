@@ -235,9 +235,6 @@ button:hover {
     opacity: 1;
 }
 
-.tooltipText:before {
-    content: "blablabla";
-}
 
 @media only screen and (max-device-height: 768px) {
     .modalDialog > div {
