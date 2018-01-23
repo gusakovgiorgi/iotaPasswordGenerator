@@ -27,7 +27,7 @@ function copyTextToClipboard(text) {
     try {
         var successful = document.execCommand('copy');
         var msg = successful ? 'successful' : 'unsuccessful';
-        console.log('Copying text command was ' + msg);
+//        console.log('Copying text command was ' + msg);
     } catch (err) {
         console.log('Oops, unable to copy');
     }
@@ -113,11 +113,11 @@ function generateRandomString(e) {
     }
 
 
-    console.log("text = " + seedText);
+//    console.log("text = " + seedText);
 }
 
 function bubbleClicked(e) {
-    console.log(e);
+//    console.log(e);
     cklickNumber++;
     if (cklickNumber < maxClickNumber) {
         generateRandomString(e);

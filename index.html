@@ -5,13 +5,15 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/animating-style.css">
-
+    <meta name="description" content="On this site you can generate random iota wallet seed in a secure way">
+    <meta name="keywords" content="IOTA, iota, seed, password, generator">
+    <meta name="author" content="Gusakov Giorgi"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animating-style.css">
 
-    <title>Generate IOTA password</title>
+    <title>Generate IOTA  wallet seed</title>
 </head>
 
 <body>
@@ -22,7 +24,7 @@
         </div>
     </header>
 
-    <img id="logo" src="img/iota.png">
+    <img id="logo" src="img/iota.png" alt="IOTA logo">
 
     <button id="start_generating" onclick="generate();">Start generating</button>
 
@@ -42,7 +44,7 @@
             <h3>Your generated IOTA wallet seed</h3>
             <!-- The text field -->
             <div id="generated-password-container"><input type="text" disabled="" value="" id="generated-value">
-                <div class="tooltip"><span class="tooltiptext" id="copy-tooltip">Copy to clipboard</span><img src="img/copy.svg" onclick="copyText()"></div>
+                <div class="tooltip"><span class="tooltiptext" id="copy-tooltip">Copy to clipboard</span><img src="img/copy.svg" onclick="copyText()" alt="copy icon"></div>
             </div>
             <div class="description">
                 <p>*Change some peace of generated seed for your 100% security!</p>
@@ -61,15 +63,13 @@
 
     <!--    <a href="#" onclick="openModalDialog()">Open Dialog</a>-->
 
-    <img id="bubble" src="img/bubble.png" usemap="#circle_map">
+    <img id="bubble" src="img/bubble.png" usemap="#circle_map" alt="bubble image">
 
     <footer>
     <hr>
         <p>For questions and suggestions <a href="gusakov.giorgi@gmail.com">contact me</a>.</p>
     </footer>
 
-
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <script src="js/generator.js"></script>
 </body>
 
