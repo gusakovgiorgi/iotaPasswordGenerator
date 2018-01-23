@@ -1,55 +1,76 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
 
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/header_text_style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animating-style.css">
 
-	<title>Generate IOTA password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Generate IOTA password</title>
 </head>
+
 <body>
-	<header>
-		<div id="animation_main_word">IOTA</div> 
-		<div id="animation_main_phrase"> 
-			<span>GENERATE IOTA PASSWORD</span>
-		</div>
-	</header>
+    <header>
+        <div id="animation_main_word">IOTA</div>
+        <div id="animation_main_phrase">
+            <span>GENERATE WALLET SEED</span>
+        </div>
+    </header>
 
-	<img  id="logo" src="img/iota.png">
+    <img id="logo" src="img/iota.png">
 
-	<button id="start_generating" onclick="generate();">Start generating</button>
+    <button id="start_generating" onclick="generate();">Start generating</button>
 
-	<map  id="circle_map" name="circle_map">
+    <map id="circle_map" name="circle_map">
 		<area shape="circle" coords="50,50,50" href="#" alt="bubble click area" onclick="bubbleClicked(event)">
 	</map>
 
-	<div id="progressbar-main-container">
-	<div class="progressbar-container">
-		<div id="myBar" class="progressbar"></div>
-	</div>
-	<p id="progressbar-description">10 clicks remaining</p>
-	</div>
+    <div id="progressbar-main-container">
+        <div class="progressbar-container">
+            <div id="myBar" class="progressbar"></div>
+        </div>
+        <p id="progressbar-description">10 clicks remaining</p>
+    </div>
 
-	<a href="#openModal" onclick="openModalDialog()">Open Modal</a>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <h3>Your generated IOTA wallet seed</h3>
+            <!-- The text field -->
+            <div id="generated-password-container"><input type="text" disabled="" value="" id="generated-value">
+                <div class="tooltip"><span class="tooltiptext" id="copy-tooltip">Copy to clipboard</span><img src="img/copy.svg" onclick="copyText()"></div>
+            </div>
+            <div class="description">
+                <p>*Change some peace of generated seed for your 100% security!</p>
+                
+                <p>*Do not lose it!** It cannot be recovered if you lose it.</p>
 
-<div id="openModal" class="modalDialog">
-		<div>
-		<h2>Modal Box</h2>
-		<!-- The text field -->
-<div id="generated-password-container"><input type="text" size="81" disabled="" value="Hello World" id="generated-value"><img src="img/copy.svg" ></div>
-		<button onclick="closeModalDialog()">CLOSE</button>
-	</div>
-	
-</div>
-	
+                <p>**Do not share it!** Your funds will be stolen if you use this file on a malicious/phishing site.</p>
 
-<img id="bubble" src="img/bubble.png" usemap="#circle_map">
+                <p>**Make a backup!** Secure it like the millions of dollars it may one day be worth.</p>
+            </div>
+            <button onclick="closeModalDialog()">UNDETSTAND! CLOSE</button>
+        </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/generator.js"></script>
+    <!--    <div id="snackbar">Some text some message..</div>-->
+
+    <!--    <a href="#" onclick="openModalDialog()">Open Dialog</a>-->
+
+    <img id="bubble" src="img/bubble.png" usemap="#circle_map">
+
+    <footer>
+    <hr>
+        <p>For questions and suggestions <a href="gusakov.giorgi@gmail.com">contact me</a>.</p>
+    </footer>
+
+
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <script src="js/generator.js"></script>
 </body>
+
 </html>
