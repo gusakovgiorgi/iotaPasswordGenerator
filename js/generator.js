@@ -108,7 +108,7 @@ function generateRandomString(e) {
 
     //if it is last round than generate last string
     if (cklickNumber == 10) {
-        var lastSymbolCode = Math.round(Math.random() * e.clientX % 27);
+        var lastSymbolCode = Math.round(Math.random() * e.clientX % 25);
         seedText += String.fromCharCode(65 + lastSymbolCode);
     }
 
@@ -158,6 +158,7 @@ function move(number) {
 function openModalDialog(seed) {
     var dialog = document.getElementById("openModal");
     dialog.style.opacity = 1;
+    dialog.style.visibility="visible";
     dialog.style.pointerEvents = "auto";
     document.getElementById("generated-value").value = seed;
 }

@@ -35,6 +35,46 @@ header div {
     white-space: nowrap;
 }
 
+.modalDialog {
+    position: fixed;
+    color: black;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+
+.modalDialog > div {
+    width: 80%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.modalDialog .description {
+    display: inline-block;
+    font-size: 0.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 40px auto;
+    border: 2px dashed;
+
+}
+
+.modalDialog button {
+    margin: auto;
+}
 footer {
     position: fixed;
     padding: 0 5%;
@@ -129,46 +169,6 @@ button {
 button:hover {
     background-color: #767227;
     color: white;
-}
-
-.modalDialog {
-    position: fixed;
-    color: black;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 10;
-    opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-}
-
-
-.modalDialog > div {
-    width: 80%;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: #fff;
-}
-
-.modalDialog .description {
-    display: inline-block;
-    font-size: 0.5em;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 40px auto;
-    border: 2px dashed;
-
-}
-
-.modalDialog button {
-    margin: auto;
 }
 
 #generated-password-container {
