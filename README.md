@@ -1,3 +1,3 @@
 # iotaPasswordGenerator
-Random password generator for IOTA Wallet seed (the Tangle seed)
-To used it go to [iotapasswordgenerator.com](https://generateiotaseed.com)
+Random password generator for IOTA wallet seed (the Tangle seed)
+To use it go to [iotapasswordgenerator.com](https://generateiotaseed.com)
